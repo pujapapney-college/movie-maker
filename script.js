@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     async function searchMovies(movieName) {
       try {
         movieResults.innerHTML = '<div class="loading">Searching movies...</div>';
-  
+        console.log('test');
+        
         const response = await fetch(
           `http://www.omdbapi.com/?s=${movieName}&apikey=14e82aca`
         );
